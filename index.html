@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>JS-CRUD</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onformSubmit">
+                    <div>
+                        <label for="productCode">Product Code</label><br><br>
+                        <input type="text" name="productCode" id="productCode">
+                    </div>
+                    <div>
+                        <label for="product">Product Name</label><br><br>
+                        <input type="text" name="product" id="product">
+                    </div>
+                    <div>
+                        <label for="qty">Qty</label><br><br>
+                        <input type="text" name="qty" id="qty">
+                    </div>
+                    <div>
+                        <label for="perPrice">Price </label><br><br>
+                        <input type="text" name="product" id="perPrice"><br><br>
+                    </div>
+                    <div class="form-action--">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+                <td>
+                    <table class="list" id="storelist">
+                        <thead>
+                            <tr>Product Code</tr>
+                            <tr>Product Name</tr>
+                            <tr>Product Qty</tr>
+                            <tr>Product Price</tr>
+                        </thead>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
